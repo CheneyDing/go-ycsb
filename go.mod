@@ -3,7 +3,7 @@ module github.com/pingcap/go-ycsb
 require (
 	cloud.google.com/go/compute v1.3.0 // indirect
 	cloud.google.com/go/spanner v1.29.0
-	github.com/AndreasBriese/bbloom v0.0.0-20180913140656-343706a395b7 // indirect
+	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
 	github.com/XiaoMi/pegasus-go-client v0.0.0-20181029071519-9400942c5d1c
 	github.com/aerospike/aerospike-client-go v1.35.2
 	github.com/apache/thrift v0.0.0-20171203172758-327ebb6c2b6d // indirect
@@ -13,11 +13,7 @@ require (
 	github.com/boltdb/bolt v1.3.1
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e
-	github.com/cncf/udpa/go v0.0.0-20220112060539-c52dc94e7fbe // indirect
-	github.com/cncf/xds/go v0.0.0-20220121163655-4a2b9fdd466b // indirect
-	github.com/dgraph-io/badger v1.5.4
-	github.com/envoyproxy/go-control-plane v0.10.1 // indirect
-	github.com/envoyproxy/protoc-gen-validate v0.6.3 // indirect
+	github.com/dgraph-io/badger v1.6.0
 	github.com/facebookgo/ensure v0.0.0-20160127193407-b4ab57deab51 // indirect
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 // indirect
 	github.com/facebookgo/subset v0.0.0-20150612182917-8dac2c3c4870 // indirect
@@ -38,19 +34,28 @@ require (
 	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tikv/client-go/v2 v2.0.0-rc.0.20220222033436-79b962a84d18
-	github.com/tikv/pd/client v0.0.0-20220222032342-97a35a18158c // indirect
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
 	github.com/xdg/stringprep v1.0.0 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20181031023651-12c4817b42c5 // indirect
 	go.mongodb.org/mongo-driver v1.0.2
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
+	golang.org/x/mod v0.5.0 // indirect
 	google.golang.org/api v0.69.0
 	google.golang.org/genproto v0.0.0-20220218161850-94dd64e39d7c
+	google.golang.org/grpc v1.45.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/ini.v1 v1.42.0 // indirect
 	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637 // indirect
 )
 
 replace github.com/apache/thrift => github.com/apache/thrift v0.0.0-20171203172758-327ebb6c2b6d
+
+replace github.com/tikv/client-go/v2 => ../client-go
+
+replace google.golang.org/grpc v1.45.0 => google.golang.org/grpc v1.25.1
+
+replace cloud.google.com/go/spanner v1.29.0 => cloud.google.com/go/spanner v1.13.0
+
+replace github.com/dgraph-io/badger v1.6.0 => github.com/dgraph-io/badger v1.5.4
 
 go 1.13
