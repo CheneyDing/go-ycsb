@@ -1,7 +1,7 @@
 module github.com/pingcap/go-ycsb
 
 require (
-	cloud.google.com/go/compute v1.3.0 // indirect
+	//	cloud.google.com/go/compute v1.3.0 // indirect
 	cloud.google.com/go/spanner v1.29.0
 	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
 	github.com/XiaoMi/pegasus-go-client v0.0.0-20181029071519-9400942c5d1c
@@ -39,7 +39,6 @@ require (
 	github.com/yuin/gopher-lua v0.0.0-20181031023651-12c4817b42c5 // indirect
 	go.mongodb.org/mongo-driver v1.0.2
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
-	golang.org/x/mod v0.5.0 // indirect
 	google.golang.org/api v0.69.0
 	google.golang.org/genproto v0.0.0-20220218161850-94dd64e39d7c
 	google.golang.org/grpc v1.45.0 // indirect
@@ -52,10 +51,16 @@ replace github.com/apache/thrift => github.com/apache/thrift v0.0.0-201712031727
 
 replace github.com/tikv/client-go/v2 => ../client-go
 
-replace google.golang.org/grpc v1.45.0 => google.golang.org/grpc v1.25.1
+replace google.golang.org/grpc v1.45.0 => google.golang.org/grpc v1.29.1
 
-replace cloud.google.com/go/spanner v1.29.0 => cloud.google.com/go/spanner v1.13.0
+replace cloud.google.com/go/spanner v1.29.0 => cloud.google.com/go/spanner v1.20.0
 
 replace github.com/dgraph-io/badger v1.6.0 => github.com/dgraph-io/badger v1.5.4
+
+replace google.golang.org/api v0.69.0 => google.golang.org/api v0.44.0
+
+replace cloud.google.com/go v0.100.2 => cloud.google.com/go v0.75.0
+
+replace github.com/pingcap-incubator/tinykv v0.0.0-20220225085929-f050d8c1bde1 => ../dpukv
 
 go 1.13

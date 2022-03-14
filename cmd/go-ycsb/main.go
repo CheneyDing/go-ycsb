@@ -43,6 +43,8 @@ import (
 	_ "github.com/pingcap/go-ycsb/db/mysql"
 	// Register TiKV database
 	_ "github.com/pingcap/go-ycsb/db/tikv"
+	// Register TinyKV database
+	_ "github.com/pingcap/go-ycsb/db/tinykv"
 	// Register PostgreSQL database
 	_ "github.com/pingcap/go-ycsb/db/pg"
 	// Register Aerospike database

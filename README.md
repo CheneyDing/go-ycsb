@@ -109,6 +109,16 @@ Common configurations:
 |tikv.batchsize|128|Request batch size|
 
 
+### TinyKV
+
+|field|default value|description|
+|-|-|-|
+|tinykv.pd|"127.0.0.1:2379"|PD endpoints, seperated by comma|
+|tinykv.type|"raw"|TinyKV mode, "raw"|
+|tinykv.conncount|128|gRPC connection count|
+|tinykv.batchsize|128|Request batch size|
+
+
 ### FoundationDB
 
 |field|default value|description|
